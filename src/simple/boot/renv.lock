@@ -52,6 +52,21 @@
       ],
       "Hash": "d4335fe7207f1c01ab8c41762f5840d4"
     },
+    "TAF": {
+      "Package": "TAF",
+      "Version": "4.3.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "grDevices",
+        "lattice",
+        "methods",
+        "stats",
+        "tools",
+        "utils"
+      ],
+      "Hash": "1648090cf847024f18fa6200f86ca17d"
+    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.2.1",
@@ -62,6 +77,27 @@
       ],
       "Hash": "c39f4155b3ceb1a9a2799d700fbd4b6a"
     },
+    "base64enc": {
+      "Package": "base64enc",
+      "Version": "0.1-6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "5edb675b7baa6e9a0d86dd2c28de1676"
+    },
+    "cachem": {
+      "Package": "cachem",
+      "Version": "1.1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "fastmap",
+        "rlang"
+      ],
+      "Hash": "cd9a672193789068eb5a2aad65a0dedf"
+    },
     "curl": {
       "Package": "curl",
       "Version": "7.0.0",
@@ -71,6 +107,13 @@
         "R"
       ],
       "Hash": "aa27e963d3deccf4bade44d06b976977"
+    },
+    "fastmap": {
+      "Package": "fastmap",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "aa5e1cd11c2d15497494c5292d7ffcc8"
     },
     "httr": {
       "Package": "httr",
@@ -86,6 +129,81 @@
         "openssl"
       ],
       "Hash": "ac107251d9d9fd72f0ca8049988f1d7f"
+    },
+    "icesConnect": {
+      "Package": "icesConnect",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "icestoolsprod",
+      "Requirements": [
+        "base64enc",
+        "httr",
+        "jsonlite"
+      ],
+      "Hash": "e7289400572c3490d05ff688d43d81b8"
+    },
+    "icesDatsu": {
+      "Package": "icesDatsu",
+      "Version": "1.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "cachem",
+        "httr",
+        "icesConnect",
+        "jsonlite",
+        "memoise",
+        "rlang"
+      ],
+      "Hash": "2b53153c97f89c1b571f3b600f313f85"
+    },
+    "icesSAG": {
+      "Package": "icesSAG",
+      "Version": "1.6.6",
+      "Source": "Repository",
+      "Repository": "icestoolsprod",
+      "Requirements": [
+        "R",
+        "cachem",
+        "curl",
+        "grid",
+        "jsonlite",
+        "memoise",
+        "png",
+        "rlang"
+      ],
+      "Hash": "9021b8169542d8c2478d4c4d12c6d1cb"
+    },
+    "icesTAF": {
+      "Package": "icesTAF",
+      "Version": "4.3.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "TAF",
+        "httr",
+        "icesConnect",
+        "icesDatsu",
+        "icesSAG",
+        "icesVocab",
+        "jsonlite",
+        "rlang"
+      ],
+      "Hash": "83a0072cf67d3ada4c7bacfaea06e9b0"
+    },
+    "icesVocab": {
+      "Package": "icesVocab",
+      "Version": "1.3.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "cachem",
+        "httr",
+        "icesConnect",
+        "memoise",
+        "rlang"
+      ],
+      "Hash": "58988e89592604a3b7509f38305c4921"
     },
     "jose": {
       "Package": "jose",
@@ -108,6 +226,32 @@
       ],
       "Hash": "b0776f526d36d8bd4a3344a88fe165c4"
     },
+    "lattice": {
+      "Package": "lattice",
+      "Version": "0.22-5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics",
+        "grid",
+        "stats",
+        "utils"
+      ],
+      "Hash": "7c5e89f04e72d6611c77451f6331a091"
+    },
+    "memoise": {
+      "Package": "memoise",
+      "Version": "2.0.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "cachem",
+        "rlang"
+      ],
+      "Hash": "e2817ccf4a065c5d9d7f2cfbe7c1d78c"
+    },
     "mime": {
       "Package": "mime",
       "Version": "0.13",
@@ -128,6 +272,16 @@
       ],
       "Hash": "d5811dade9cd3a34a9038a45f1a59bae"
     },
+    "png": {
+      "Package": "png",
+      "Version": "0.1-8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "bd54ba8a0a5faded999a7aab6e46b374"
+    },
     "rappdirs": {
       "Package": "rappdirs",
       "Version": "0.3.4",
@@ -147,6 +301,17 @@
         "utils"
       ],
       "Hash": "397b7b2a265bc5a7a06852524dabae20"
+    },
+    "rlang": {
+      "Package": "rlang",
+      "Version": "1.1.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "34c0d101f4613098abc538b82e0d86c5"
     },
     "sys": {
       "Package": "sys",
