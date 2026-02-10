@@ -1,0 +1,9 @@
+                         [,1]
+dir.exists               TRUE
+qc.boot.exists           TRUE
+qc.data.bib.exists       TRUE
+qc.data.bib.valid        TRUE
+qc.data.bib.entries      TRUE
+qc.software.bib.exists  FALSE
+qc.software.bib.valid   FALSE
+qc.software.bib.entries FALSE
