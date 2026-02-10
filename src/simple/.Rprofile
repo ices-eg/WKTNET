@@ -26,10 +26,10 @@ local({
 
 # check boot data entries:
 local({
-  if (requireNamespace("TAF", quietly = TRUE)) {
-
+  check.boot.data <- function() {
     bib.entries <- TAF::read.bib("boot/DATA.bib")
 
+    # todo: check url, and check if data present but not in DATA.bib
     checks <-
       sapply(bib.entries, function(entry) {
         if (entry$source == "file") {
@@ -53,10 +53,15 @@ local({
         paste("  -", missing, collapse = "\n"),
         "\n  Run `TAF::taf.boot()` to update the boot folder with the missing data entries."
       )
-    }
-    else {
+    } else {
       message("- All data entries in boot/DATA.bib are present")
     }
+
+    invisible(checks)
+  }
+
+  if (requireNamespace("TAF", quietly = TRUE)) {
+    check.boot.data()
   } else {
     message("- TAF package not available, skipping boot data checks.")
   }
