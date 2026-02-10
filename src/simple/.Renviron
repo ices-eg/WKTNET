@@ -1,0 +1,2 @@
+RENV_PATHS_RENV=boot/renv
+RENV_PATHS_LOCKFILE=boot/renv.lock
