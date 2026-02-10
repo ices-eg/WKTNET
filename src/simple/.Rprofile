@@ -16,10 +16,12 @@ options(
     )
 )
 
-# show nuumber of dependencies:
+# show number of dependencies:
 local({
-  ndeps <- length(jsonlite::fromJSON("boot/renv.lock")$Packages)
-  message("- Number of project dependencies: ", ndeps)
+  if (file.exists("boot/renv.lock")) {
+    ndeps <- length(jsonlite::fromJSON("boot/renv.lock")$Packages)
+    message("- Number of project dependencies: ", ndeps)
+  }
 })
 
 # check boot data entries:
