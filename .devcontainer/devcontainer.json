@@ -1,0 +1,8 @@
+{
+  // https://rocker-project.org/images/devcontainer/features.html
+  "name": "TAF dev",
+  "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.3",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/renv-cache:0": {}
+  }
+}
