@@ -1,0 +1,31 @@
+
+# WKTNET simple template
+
+## how to use this template
+
+This template is a simple example of how to use the WKTNET simple
+template. It is not a complete example, but it is a starting point which
+demonstrates how to download data from the RDBES API, and read it into R
+using RDBEScore functions. The template is structured as follows:
+
+- `boot/rdbes.R`: contains the code to download the data from the RDBES
+  API and save as a zip file.
+- `boot/DATA.bib`: contains the entry for `rdbes.R` which will be
+  processed by `taf.boot()` in order to download data from the RDBES
+  API.
+- `data.R`: contains the code to read from the zip file.
+
+to use this template, make sure R is open in your project, run in the
+command line:
+
+``` r
+icesTAF::taf.skeleton.wktnet.simple()
+```
+
+## Information
+
+this document was build using:
+
+``` r
+rmarkdown::render("README.Rmd")
+```
