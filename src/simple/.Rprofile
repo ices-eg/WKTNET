@@ -27,8 +27,8 @@ local({
 # check boot data entries:
 local({
   if (
-    requireNamespace("icesTAF", quietly = TRUE) ||
-      packageVersion("icesTAF") >= package_version("4.3.1")
+    requireNamespace("icesTAF", quietly = TRUE) &&
+      utils::packageVersion("icesTAF") >= package_version("4.3.1")
   ) {
     icesTAF::check.boot.data()
   } else {
