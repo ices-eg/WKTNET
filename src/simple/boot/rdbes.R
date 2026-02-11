@@ -1,11 +1,6 @@
 library(AzureAuth)
 library(httr)
 
-# we will package this into a function,
-if (FALSE) {
-  download.rdbes.data(year, country, datatype, exportformat, cshierarchy, filename)
-}
-
 # Authenticate and get token
 az <- get_azure_token(
   resource = "api://18ab5ebb-1794-4e83-83f1-8fbd3dd5b152/rdbes.api.access",
@@ -13,8 +8,6 @@ az <- get_azure_token(
   app = "b6347a7e-5f73-463a-81b1-3781d163de19",
   version = 2
 )
-AzureAuth::decode_jwt(az)
-
 
 # Extract the access token
 access_token <- az$credentials$access_token
