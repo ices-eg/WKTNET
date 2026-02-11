@@ -19,8 +19,10 @@ to use this template, make sure R is open in your project, run in the
 command line:
 
 ``` r
-icesTAF::taf.skeleton.wktnet.simple()
+icesTAF::taf.template(template = "WKTNET:simple")
 ```
+
+## details
 
 ## Information
 
