@@ -24,7 +24,7 @@ DataBySex,"This field will only have a value if sex ratio is required. The lette
 ALK,"This field will only have a value if an ALK is required. The letter could either indicate the requested  temporal level: A - annual; Q - quarter, M - month, Or simply indicate a Y or N"
 agePlusGroup,"This provides the age for the age plus group, e.g. 15 for mac.27.nea"
 Effort,"This field will only have a value if effort is required. The letter indicates the requested  temporal level: A - annual; Q - quarter, M - month."
-EffortUnits,Effort Units
+EffortUnits,Effort Units if required
 Fleet_Metier,"This field is intended to link to a vocabulary or table that contains the required fleet name or metier vocabulary required for that stock. e.g. link to the metier5 vocab, or the metier6 vocab, or to a fleet list (a version of the fleet table that used to be in Annex 1, which has been reformatted: Revised_DC_Annex_1_fleet_table.csv) "
 AreaDefinition,"This field is intended to provide information for an area request that deviates from the usual ICES areas, e.g. a link to the rectangles used to define 4aE and 4aW for her.27.3a47d, or the rectangles for the cod.27.46a7d20 regions. 'ICES_Area' indicates the usual ICES areas are to be used, but could link to the vocabulary."
 AdditionalOutputFormat,"This field indicates if there is an addditional data request, e.g. the DC_Annex_WGNSSK1 cod.27.46a7d20 template"
